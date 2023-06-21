@@ -1,0 +1,441 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+.header {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.header img {
+  width: 150px;
+}
+
+.head {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.head .common {
+  flex-basis: 25%;
+}
+
+.call {
+  color: rgba(146, 131, 131, 0.973);
+  margin-bottom: 2%;
+}
+.call p {
+  font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.search input {
+  width: 230px;
+  height: 30px;
+  position: relative;
+  padding-left: 10px;
+  border-radius: 50px;
+  color: rgba(146, 131, 131, 0.973);
+  cursor: pointer;
+}
+.search button {
+  border: none;
+  font-size: 15px;
+  position: absolute;
+  right: 2%;
+  bottom: 38%;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.mainmenu {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.main {
+  background-color: rgba(43, 104, 168, 255);
+}
+.menu {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  background-color: rgba(43, 104, 168, 255);
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  justify-content: space-between;
+}
+.menu ul a {
+  text-decoration: none;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.menu-left {
+  flex-basis: 65%;
+}
+.menu-right {
+  flex-basis: 35%;
+  text-align: right;
+}
+.menu-right button {
+  border-radius: 5px;
+  padding: 7px 14px;
+  background-color: rgba(249, 183, 30, 255);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.menu-right button:last-child {
+  background-color: rgba(252, 227, 10, 255);
+}
+
+.banner {
+  height: 550px;
+  width: 100%;
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.info-1 {
+  color: white;
+  position: absolute;
+  width: 30%;
+  height: 15%;
+  bottom: 35%;
+  right: 20%;
+  background-color: rgba(43, 104, 168, 255);
+  opacity: 0.9;
+  border-radius: 5px;
+}
+.info-2 {
+  color: white;
+  position: absolute;
+  height: 50px;
+  width: 40pxs;
+  background-color: rgba(13, 56, 95, 0.9);
+  bottom: 25%;
+  right: 33%;
+  border-radius: 5px;
+}
+.info-2 h2 {
+  display: inline-block;
+}
+.info-2 p {
+  display: inline-block;
+}
+
+.info-3 {
+  position: absolute;
+  width: 80%;
+  height: 80px;
+  margin: auto;
+  padding: 10px;
+  background-color: black;
+  top: 98%;
+
+  left: 10%;
+  border-radius: 5px;
+}
+.info-3 h4 {
+  color: white;
+  position: absolute;
+  bottom: 95%;
+  left: 5%;
+  padding: 5px 15px;
+  background-color: black;
+  border-radius: 5px;
+}
+.booking {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin-top: 5px;
+}
+.q1,
+.q2,
+.q3 {
+  flex-basis: 20%;
+}
+.booking input {
+  width: 180px;
+  padding: 5px;
+  cursor: pointer;
+}
+.q4 {
+  flex-basis: 30%;
+}
+.q4 input {
+  width: 60px;
+}
+.booking button {
+  width: 100px;
+  height: 25px;
+  margin-right: 50px;
+  margin-top: 10px;
+  background-color: rgba(245, 61, 61, 255);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popular {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: #eeeeee;
+  position: relative;
+  top: 100%;
+  overflow: hidden;
+}
+.popular h3 {
+  color: #636363;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.pophead {
+  width: 80%;
+  margin: auto;
+}
+.pophead h3 {
+  position: relative;
+  margin-top: 40px;
+}
+.pophead hr {
+  position: relative;
+  margin-top: 15px;
+  color: gray;
+}
+.poprow {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  margin: auto;
+  display: flex;
+
+  margin-top: 40px;
+  margin-bottom: 80px;
+  top: 10%;
+  background-color: white;
+}
+.popcol {
+  flex-basis: 33%;
+  margin: 0 30px;
+  cursor: pointer;
+}
+p .popcol {
+  flex-basis: 30%;
+  margin: 0 15px;
+  margin-bottom: 50px;
+}
+.popcol .popcol img {
+  height: 85%;
+  width: 100%;
+}
+.note {
+  display: flex;
+}
+.not {
+  width: 150px;
+}
+.popcol h5 {
+  font-size: large;
+  color: rgba(42, 98, 157, 255);
+}
+.popcol h3 {
+  color: white;
+  background: rgba(42, 98, 157, 255);
+  width: 20%;
+  height: 25px;
+  position: relative;
+  left: 30%;
+}
+.hotdeals {
+  background-color: #eeeeee;
+  margin-bottom: 100px;
+  position: relative;
+}
+.hotdeals h3 {
+  color: #636363;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.dealhead {
+  width: 80%;
+  margin: auto;
+}
+.dealsrow {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  margin-top: 25px;
+  justify-content: space-between;
+}
+.dealscol {
+  width: 100%;
+  flex-basis: 48%;
+  left: 12.5%;
+  position: relative;
+}
+.dealscol img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.latestblog {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  background-color: #eeeeee;
+  position: relative;
+  bottom: 100px;
+}
+.blog {
+  width: 80%;
+  margin: auto;
+  margin: 30px 40px;
+  background-color: white;
+  position: relative;
+  left: 7%;
+  padding: 25px 40px;
+  display: flex;
+}
+.blog p {
+  padding-left: 12%;
+}
+.blog h4 {
+  color: #636363;
+}
+
+.line {
+  height: 65px;
+  border: 1.5px solid #636363;
+  position: absolute;
+  bottom: 2%;
+  left: 20%;
+}
+
+.foot {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.footer {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  display: flex;
+}
+.footrow {
+  width: 100%;
+  position: relative;
+  bottom: 50px;
+}
+.footcol {
+  display: flex;
+
+  justify-content: space-between;
+  width: 100%;
+  font-size: small;
+  color: #636363;
+}
+
+.footcol li {
+  list-style: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.fc1 {
+  text-align: left;
+  position: absolute;
+  margin: auto;
+  flex-basis: 22%;
+}
+.fc2 {
+  position: relative;
+  left: 20%;
+  flex-basis: 22%;
+}
+.fc2 li {
+  position: relative;
+  bottom: 27px;
+}
+.fc3 {
+  position: relative;
+  left: 5%;
+  flex-basis: 22%;
+}
+.fc3 ul {
+  display: flex;
+  font-size: large;
+}
+.fc3 ul a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #636363;
+  color: white;
+  border-radius: 50%;
+  position: relative;
+  bottom: 50px;
+}
+.fc4 {
+  flex-basis: 22%;
+}
+.fc4 form {
+  display: flex;
+  position: relative;
+  bottom: 60px;
+}
+.fc4 input {
+  padding: 12px 24px;
+  margin: 0%;
+}
+.fc4 button {
+  padding: 12px 20px;
+  margin: 0%;
+  color: white;
+  background-color: rgba(25, 95, 167, 255);
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.footcol h4 {
+  padding-bottom: 25%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+}
+.copy {
+  width: 100%;
+  margin: auto;
+}
+.copyright {
+  width: 80%;
+  margin: auto;
+}
+.copyright p {
+  font-size: small;
+  color: #636363;
+}
